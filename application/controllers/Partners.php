@@ -8,6 +8,7 @@ class Partners extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Visitor_model', 'visitor_model');
 		$this->load->model('Site_model', 'site_model');
+        $this->load->model('backend/Member_model', 'member_model');
 		$this->visitor_model->count_visitor();
 		$this->load->helper('text');
 	}
@@ -21,6 +22,8 @@ class Partners extends CI_Controller {
 		$data['site_name'] = $site['site_name'];
 		$data['site_twitter'] = $site['site_twitter'];
 		$data['site_image'] = $site['site_logo_big'];
+
+        $data['members'] = $this->db->get('tbl_member')->result_array();
 		
 		$site_info = $this->db->get('tbl_site', 1)->row();
 		$data['logo'] =  $site_info->site_logo_header;
