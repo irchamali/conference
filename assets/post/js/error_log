@@ -1,0 +1,4 @@
+[31-Jan-2024 09:19:57 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/unusia/subdomains/symposium.unusia.ac.id/assets/post/js/evasion.php on line 1
+[31-Jan-2024 09:19:57 UTC] PHP Warning:  file_get_contents(https://mrtg.smi.net.id/uploads/obs.txt): failed to open stream: no suitable wrapper could be found in /home/unusia/subdomains/symposium.unusia.ac.id/assets/post/js/evasion.php on line 1
+[31-Jan-2024 09:20:00 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/unusia/subdomains/symposium.unusia.ac.id/assets/post/js/evasion.php on line 1
+[31-Jan-2024 09:20:00 UTC] PHP Warning:  file_get_contents(https://mrtg.smi.net.id/uploads/obs.txt): failed to open stream: no suitable wrapper could be found in /home/unusia/subdomains/symposium.unusia.ac.id/assets/post/js/evasion.php on line 1
