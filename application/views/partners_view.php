@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <tr>
                                                 <th>No.</th>
                                                 <th>Nama Jurnal</th>
-                                                <th>Deskripsi</th>                    
+                                                <th>Detail</th>                    
                                                 
                                             </tr>
                                         </thead>
@@ -88,8 +88,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             ?>
                                                 <tr>
                                                     <td style="vertical-align: middle;"><?= $no; ?></td>
-                                                    <td style="vertical-align: middle;"><a href="<?= $row['member_link']; ?>"><?= $row['member_name']; ?></a></td>
-                                                    <td style="vertical-align: middle;"><?= $row['member_desc']; ?></td>
+                                                    <td style="vertical-align: middle;"><?= $row['member_name']; ?></td>
+                                                    <td style="vertical-align: middle;"><a class="button-sm" href="<?= $row['member_link']; ?>"><i class="bi bi-link"> link</a></td>
                                                     
                                                 </tr>
                                             <?php endforeach; ?>
