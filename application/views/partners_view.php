@@ -34,20 +34,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="twitter:title" content="<?= $title; ?>" />
     <meta name="twitter:site" content="<?php echo $site_twitter; ?>" />
     <meta name="twitter:image" content="<?php echo base_url() . 'assets/frontend/images/' . $site_image ?>" />
-
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-		rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 	<!-- Vendor CSS Files -->
 	<link href="<?= base_url() . 'assets/frontend/vendor/aos/aos.css' ?>" rel="stylesheet">
 	<link href="<?= base_url() . 'assets/frontend/vendor/bootstrap/css/bootstrap.min.css' ?>" rel="stylesheet">
 	<link href="<?= base_url() . 'assets/frontend/vendor/bootstrap-icons/bootstrap-icons.css' ?>" rel="stylesheet">
 	<link href="<?= base_url() . 'assets/frontend/vendor/glightbox/css/glightbox.min.css' ?>" rel="stylesheet">
 	<link href="<?= base_url() . 'assets/frontend/vendor/swiper/swiper-bundle.min.css' ?>" rel="stylesheet">
-
 	<!-- Template Main CSS File -->
 	<link href="<?= base_url() . 'assets/frontend/css/style.css'; ?>" rel="stylesheet">
+    <!-- DataTables -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 
 </head>
 
@@ -78,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <tr>
                                                 <th>No.</th>
                                                 <th>Nama Jurnal</th>
-                                                <th>Link</th>                    
+                                                <th>Deskripsi</th>                    
                                                 
                                             </tr>
                                         </thead>
@@ -90,8 +88,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             ?>
                                                 <tr>
                                                     <td style="vertical-align: middle;"><?= $no; ?></td>
-                                                    <td style="vertical-align: middle;"><?= $row['member_name']; ?></td>
-                                                    <td style="vertical-align: middle;"><?= $row['member_link']; ?></td>
+                                                    <td style="vertical-align: middle;"><a href="<?= $row['member_link']; ?>"><?= $row['member_name']; ?></a></td>
+                                                    <td style="vertical-align: middle;"><?= $row['member_desc']; ?></td>
                                                     
                                                 </tr>
                                             <?php endforeach; ?>
@@ -122,10 +120,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="<?= base_url() . 'assets/frontend/vendor/glightbox/js/glightbox.min.js' ?>"></script>
 	<script src="<?= base_url() . 'assets/frontend/vendor/php-email-form/validate.js' ?>"></script>
 	<script src="<?= base_url() . 'assets/frontend/vendor/swiper/swiper-bundle.min.js' ?>"></script>
-
 	<!-- Template Main JS File -->
 	<script src="<?= base_url() . 'assets/frontend/js/main.js'; ?>"></script>
-
+    <!-- DataTables -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript">$(document).ready(function(){$('#mytable').DataTable();});</script>
 
 </body>
 
