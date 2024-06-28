@@ -106,25 +106,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					<div class="col-lg-3 col-md-6 col-xs-6">
 						<div class="supporter-logo">
-							<img src="assets/frontend/img/supporters/e1.png" class="img-fluid" alt="">
+							<img src="assets/frontend/img/support/e1.png" class="img-fluid" alt="">
 						</div>
 					</div>
 
 					<div class="col-lg-3 col-md-6 col-xs-6">
 						<div class="supporter-logo">
-							<img src="assets/frontend/img/supporters/ps-akn.png" class="img-fluid" alt="">
+							<img src="assets/frontend/img/support/ps-akn.png" class="img-fluid" alt="">
 						</div>
 					</div>
 					
 					<div class="col-lg-3 col-md-6 col-xs-6">
 						<div class="supporter-logo">
-							<img src="assets/frontend/img/supporters/ps-ih.png" class="img-fluid" alt="">
+							<img src="assets/frontend/img/support/ps-ih.png" class="img-fluid" alt="">
 						</div>
 					</div>
 
 					<div class="col-lg-3 col-md-6 col-xs-6">
 						<div class="supporter-logo">
-							<img src="assets/frontend/img/supporters/ps-sos.png" class="img-fluid" alt="">
+							<img src="assets/frontend/img/support/ps-sos.png" class="img-fluid" alt="">
 						</div>
 					</div>
 
